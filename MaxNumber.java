@@ -2,15 +2,15 @@ package com.bl.generics;
 
 public class MaxNumber{
 
-		Integer x,y,z;
+		Float x,y,z;
 
-		public MaxNumber(Integer x, Integer y, Integer z){
+		public MaxNumber(Float x, Float y, Float z){
 			this.x = x;
 			this.y = y;
 			this.z = z;
 		}
 		public void print(){
-			System.out.println("Given Integer's are : ");
+			System.out.println("Given Float values are : ");
 			System.out.print(x +" ");
 			System.out.print(y +" ");
 			System.out.print(z +" ");
@@ -28,7 +28,7 @@ public class MaxNumber{
 			}
 		}
 		public static void main(String[] args){
-			MaxNumber maxNum = new MaxNumber(1, 2, 3);
+			MaxNumber maxNum = new MaxNumber(1f, 2f, 3f);
 			maxNum.print();
 			maxNum.findMax();
 		}
